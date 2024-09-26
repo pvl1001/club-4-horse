@@ -1,7 +1,7 @@
 import {Button} from "shared/ui/Button";
 import logo from '../img/logo.webp';
 import s from "./Header.module.scss";
-import {RunningLine} from "./RunningLine/RunningLine.tsx";
+import {RunningLine} from "./RunningLine";
 
 
 type Props = {}
