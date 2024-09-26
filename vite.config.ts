@@ -23,6 +23,7 @@ export default ({mode}: UserConfig) => {
             },
             preprocessorOptions: {
                 scss: {
+                    api: 'modern-compiler', // or "modern"
                     additionalData: '@use "/src/app/styles/mixins" as *;',
                 },
             },
