@@ -1,0 +1,52 @@
+$duration: 30s;
+$gap: 3rem;
+
+._ {
+  height: 6rem;
+  width: 100%;
+  background-color: #F54932;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  font-family: var(--font-merriweather);
+  overflow: hidden;
+  transform: translateY(100%);
+  display: flex;
+  gap: $gap;
+
+  ol {
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    gap: 2.8rem;
+    animation: animate $duration linear infinite;
+  }
+
+  ol:first-child {
+    animation-duration: $duration;
+    transform: translateX(calc(100% + $gap));
+  }
+
+  li {
+    list-style: disc;
+  }
+
+}
+
+@keyframes animate {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - $gap));
+  }
+}
+
+@media (max-width: $media-m) {
+  ._ {
+    height: 3.8rem;
+    font-size: 1.6rem;
+  }
+}
+

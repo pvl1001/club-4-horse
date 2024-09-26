@@ -1,0 +1,36 @@
+.black {
+  --bg: rgb(31, 31, 31);
+  --color: #fff;
+  --outline-color: transparent;
+
+  &:hover {
+    --bg: rgb(251, 206, 81);
+    --color: var(--text-color-default);
+  }
+}
+
+.transparent {
+  --bg: transaprent;
+  --color: var(--text-color-default);
+  --outline-color: rgb(31, 31, 31);
+
+  &:hover {
+    --bg: rgb(31, 31, 31);
+    --color: #fff;
+  }
+}
+
+._ {
+  background-color: var(--bg);
+  color: var(--color);
+
+  min-width: 26.3rem;
+  padding: 1.3rem;
+  line-height: 1.3;
+  font-size: 1.6rem;
+  font-weight: 500;
+  transition: .2s ease-in;
+  border-radius: 6.6rem;
+  outline: .2rem solid var(--outline-color);
+  outline-offset: -.2rem;
+}

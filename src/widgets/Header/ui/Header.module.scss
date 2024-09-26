@@ -1,0 +1,121 @@
+._ {
+  padding-top: 2.6rem;
+  min-height: 70rem;
+  position: relative;
+
+  background: url("/src/widgets/Header/img/chess2.webp") calc(50% + 58.5rem) calc(100% - 2rem)/8.3rem no-repeat,
+  url("/src/widgets/Header/img/chess4.webp") calc(50% + 23.9rem) calc(100% + 0rem)/19.6rem no-repeat,
+  url("/src/widgets/Header/img/image 23.webp") center/cover no-repeat,
+  linear-gradient(rgb(233, 222, 212) 100%, rgb(233, 222, 212) 0) center/cover no-repeat,
+  url("/src/widgets/Header/img/city_path2.webp") calc(50% + 0.2rem) calc(100% + 2.6rem)/162.8rem no-repeat,
+  url("/src/widgets/Header/img/city_path.webp") calc(50% - 1.3rem) calc(100% + 2.3rem)/160.3rem no-repeat,
+  url("/src/widgets/Header/img/city.webp") center bottom/162.35rem no-repeat,
+  url("/src/widgets/Header/img/chess1.webp") calc(50% + 10rem) 26.9rem/13.3rem no-repeat,
+  url("/src/widgets/Header/img/chess3.webp") calc(50% + 44rem) 16.5rem/14.4rem no-repeat,
+  url("/src/widgets/Header/img/words.svg") calc(50% + 30.8rem) -10.3rem/78rem no-repeat,
+  radial-gradient(33rem, rgba(251, 206, 81, 0.7) 100%, transparent 0) calc(50% + 30.8rem) -6.3rem/66rem no-repeat;
+
+  background-blend-mode: normal,
+  normal,
+  color-burn,
+  color-burn,
+  normal,
+  normal,
+  normal;
+}
+
+.logo {
+  width: 24.5rem;
+}
+
+.content {
+  max-width: 54.2rem;
+  padding-top: 6.4rem;
+  line-height: 1.1;
+}
+
+.head_text {
+  font-family: var(--font-merriweather);
+  font-size: 6rem;
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
+
+  p:nth-child(2) {
+    text-align: center;
+  }
+
+  p:nth-child(3) {
+    text-align: end;
+  }
+}
+
+.description {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.buttons {
+  margin-top: 3.8rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+
+  > * {
+    flex: 1;
+  }
+}
+
+.running_line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+@media (max-width: $media-m) {
+  ._ {
+    padding-top: 1.8rem;
+    min-height: 77.4rem;
+
+    background: url("/src/widgets/Header/img/chess4.webp") calc(50% + 0.8rem) calc(100%)/10.2rem no-repeat,
+    url("/src/widgets/Header/img/image 23.webp") center/cover no-repeat,
+    linear-gradient(rgb(233, 222, 212) 100%, rgb(233, 222, 212) 0) center/cover no-repeat,
+    url("/src/widgets/Header/img/city_path.webp") calc(50% - 15.3rem) calc(100% + 1.3rem)/87.5rem no-repeat,
+    url("/src/widgets/Header/img/city.webp") calc(50% - 14.5rem) 100%/88.5rem no-repeat,
+    url("/src/widgets/Header/img/chess1.webp") calc(50% - 9.5rem) 54.1rem/6.1rem no-repeat,
+    url("/src/widgets/Header/img/chess3.webp") calc(50% + 7.5rem) 49.9rem/6.3rem no-repeat,
+    url("/src/widgets/Header/img/words.svg") calc(50% - 0.8rem) calc(100% - 3.9rem)/35.2rem no-repeat,
+    radial-gradient(15rem, rgba(251, 206, 81, 0.7) 100%, transparent 0) calc(50% + -0.8rem) calc(100% + 17.4rem)/30rem no-repeat;
+
+    background-blend-mode: normal,
+    color-burn,
+    color-burn,
+    normal,
+    normal,
+    normal;
+  }
+
+  .content {
+    padding-top: 4.2rem;
+  }
+
+  .buttons {
+    margin-top: 3.1rem;
+  }
+
+  .logo {
+    width: 21.3rem;
+  }
+
+  .head_text {
+    font-size: 3.6rem;
+  }
+
+  br {
+    display: none;
+  }
+
+
+}

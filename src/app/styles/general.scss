@@ -1,0 +1,46 @@
+@import './mixins.scss';
+
+html {
+  height: auto;
+  font-size: calc(100vw / 1920 * 10);
+
+  @media(max-width: $media-l) {
+    font-size: calc(100vw / 1366 * 10);
+  }
+
+  @media(max-width: $media-m) {
+    font-size: calc(100vw / 375 * 10);
+  }
+
+  &, * {
+    // firefox
+    scrollbar-color: #9BBBFF transparent;
+    scrollbar-width: thin;
+
+    &::-webkit-scrollbar,
+    &::-webkit-scrollbar-thumb {
+      border-radius: 0.2rem;
+    }
+
+    &::-webkit-scrollbar {
+      width: 0.4rem; /* ширина для вертикального скролла */
+      background-color: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #9BBBFF;
+    }
+  }
+}
+
+body {
+  font-family: var(--font-golos);
+  color: var(--text-color-default);
+}
+
+.wrapper {
+  max-width: 125rem;
+  width: 100%;
+  margin: 0 auto;
+  padding-inline: 2rem;
+}
