@@ -1,7 +1,6 @@
 import {Button} from "shared/ui/Button";
 import logo from '../img/logo.webp';
 import s from "./Header.module.scss";
-import {RunningLine} from "./RunningLine";
 
 
 type Props = {}
@@ -29,13 +28,6 @@ export function Header({}: Props) {
                     </div>
                 </div>
             </div>
-
-            <RunningLine className={s.running_line} data={[
-                'Дело помощи утопающим — дело рук самих утопающих!',
-                'Шахматы двигают вперед не только культуру, но и экономику!',
-                'Лед тронулся, господа присяжные заседатели!',
-            ]}/>
-
         </header>
     );
 }

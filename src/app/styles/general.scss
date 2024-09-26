@@ -39,11 +39,20 @@ body {
 }
 
 .wrapper {
-  max-width: 125rem;
+  max-width: 122.2rem;
   width: 100%;
   margin: 0 auto;
 
   @media(max-width: $media-m) {
+    overflow: hidden;
     padding-inline: 2rem;
   }
+}
+
+.text-red {
+  color: #F54932;
+}
+
+.red-line {
+  text-decoration: line-through #F54932;
 }
