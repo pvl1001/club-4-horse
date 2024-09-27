@@ -22,7 +22,7 @@ export function Session({}: Props) {
                 <div className={s.container}>
                     <p className={s.text}>и Сеанс <b className={'text-red'}>одновременной игры в шахматы на 160 досках</b> гроссмейстера О. Бендера</p>
                     <Table data={tableData}/>
-                    <a href={'#'} className={s.link}>По всем вопросам обращаться в администрацию к К. Михельсону</a>
+                    <a href={'#'} className={cn(s.link, 'link')}>По всем вопросам обращаться в администрацию к К. Михельсону</a>
                 </div>
             </div>
         </section>
