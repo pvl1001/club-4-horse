@@ -8,12 +8,12 @@ type Props = {}
 export function Stage({}: Props) {
     return (
         <div className={cn(s._, 'wrapper')}>
-            <h2 className={s.title}>
-                <span>Этапы преображения Васюков</span>
+            <div className={s.title}>
+                <h2>Этапы преображения Васюков</h2>
                 <a href={'/'} className={cn(s.link, 'link')}>
                     Будущие источники <br/> обогащения васюкинцев
                 </a>
-            </h2>
+            </div>
 
             <StageList/>
         </div>

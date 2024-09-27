@@ -38,14 +38,29 @@ body {
   color: var(--text-color-default);
 }
 
+main {
+  overflow: hidden;
+}
+
 .wrapper {
   max-width: 122.2rem;
   width: 100%;
   margin: 0 auto;
 
   @media(max-width: $media-m) {
-    overflow: hidden;
     padding-inline: 2rem;
+  }
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 5.4rem;
+  font-family: var(--font-merriweather);
+  line-height: 1.2;
+
+  @media(max-width: $media-m) {
+    line-height: 1.1;
+    font-size: 3.6rem;
   }
 }
 
