@@ -1,0 +1,16 @@
+._ {
+  background-color: #E9DED4;
+  padding-block: 4rem 7.2rem;
+}
+
+.text {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  opacity: .6;
+}
+
+@include media {
+  ._ {
+    padding-block: 4rem 6rem;
+  }
+}
