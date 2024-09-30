@@ -1,4 +1,4 @@
-.default {
+._ {
   --bg-color: var(--text-color-default);
 }
 
@@ -6,10 +6,6 @@
   &.swiper-button-disabled {
     --bg-color: #D6D6D6;
     pointer-events: none;
-  }
-
-  &.swiper-prev {
-    rotate: 180deg;
   }
 }
 
@@ -20,15 +16,20 @@
   display: grid;
   place-items: center;
   background-color: var(--bg-color);
-  transition: .2s ease-in;
 
   svg {
     height: 45%;
   }
 
-  &:hover {
-    background-color: #FBCE51;
+  @media(hover: hover) {
+    &:hover {
+      background-color: #FBCE51;
+    }
   }
+}
+
+.prev {
+  rotate: 180deg;
 }
 
 @media(max-width: $media-m) {

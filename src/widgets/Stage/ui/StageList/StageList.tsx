@@ -36,8 +36,8 @@ export function StageList({}: Props) {
                     el: '.' + s.pagination,
                 }}
                 navigation={{
-                    nextEl: '.swiper-next',
-                    prevEl: '.swiper-prev',
+                    nextEl: '.stage-next',
+                    prevEl: '.stage-prev',
                 }}
             >
                 {sliderData.map((arr, i) =>
@@ -51,9 +51,9 @@ export function StageList({}: Props) {
                     </SwiperSlide>
                 )}
                 <div className={s.navigation}>
-                    <SliderButton prev/>
+                    <SliderButton prev className={'stage-prev'}/>
                     <div className={s.pagination}/>
-                    <SliderButton next/>
+                    <SliderButton next className={'stage-next'}/>
                 </div>
             </Swiper>
         </>

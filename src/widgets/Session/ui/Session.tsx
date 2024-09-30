@@ -9,7 +9,7 @@ type Props = {}
 
 export function Session({}: Props) {
     return (
-        <section className={cn(s._, 'wrapper')}>
+        <section className={s._}>
             <div className={s.content}>
                 <p className={s.text}>Чтобы поддержать Международный васюкинский турнир
                     <img className={s.players_img} src={players_img} alt="many_chees_players"/>
