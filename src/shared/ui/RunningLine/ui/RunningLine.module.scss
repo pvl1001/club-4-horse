@@ -42,7 +42,7 @@ $gap: 3rem;
   }
 }
 
-@media (max-width: $media-m) {
+@include media {
   ._ {
     height: 3.8rem;
     font-size: 1.6rem;

@@ -40,7 +40,7 @@ $border-left: 30.6rem;
   padding-left: 1.6rem;
 }
 
-@media (max-width: $media-m) {
+@include media {
   ._ {
     &::before {
       display: none;

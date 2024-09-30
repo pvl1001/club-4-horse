@@ -1,5 +1,5 @@
 ._ {
-  padding-top: 20rem;
+  padding-block: 20rem 14rem;
   display: grid;
   grid-template-columns: 1fr auto;
 }
@@ -27,9 +27,9 @@
   margin-top: 6rem;
 }
 
-@media(max-width: $media-m) {
+@include media {
   ._ {
-    padding-top: 12rem;
+    padding-block: 12rem 10rem;
   }
 
    .navigation {

@@ -75,7 +75,7 @@
   gap: 1.3rem;
 }
 
-@media(max-width: $media-m) {
+@include media {
   ._ {
     display: none;
 
