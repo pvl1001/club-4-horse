@@ -4,11 +4,11 @@ html {
   height: auto;
   font-size: 10px;
 
-  @media(max-width: $media-l) {
+  @include media($media-l) {
     font-size: calc(100vw / 1366 * 10);
   }
 
-  @media(max-width: $media-m) {
+  @include media {
     font-size: calc(100vw / 375 * 10);
   }
 
@@ -47,7 +47,7 @@ main {
   width: 100%;
   margin: 0 auto;
 
-  @media(max-width: $media-m) {
+  @include media {
     padding-inline: 2rem;
   }
 }
@@ -58,7 +58,7 @@ h2 {
   font-family: var(--font-merriweather);
   line-height: 1.2;
 
-  @media(max-width: $media-m) {
+  @include media {
     line-height: 1.1;
     font-size: 3.6rem;
   }

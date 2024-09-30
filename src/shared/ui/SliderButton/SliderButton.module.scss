@@ -21,10 +21,8 @@
     height: 45%;
   }
 
-  @media(hover: hover) and (pointer: fine) {
-    &:hover {
-      background-color: #FBCE51;
-    }
+  @include hover {
+    background-color: #FBCE51;
   }
 }
 
@@ -32,7 +30,7 @@
   rotate: 180deg;
 }
 
-@media(max-width: $media-m) {
+@include media {
   ._ {
     width: 3.6rem;
   }

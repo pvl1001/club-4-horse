@@ -1,6 +1,20 @@
 $media-l: 1366px;
 $media-m: 767px;
 
+@mixin hover {
+  @media(hover: hover) and (pointer: fine) {
+    &:hover {
+      @content
+    }
+  }
+}
+
+@mixin media($px: $media-m) {
+  @media(max-width: $px) {
+    @content
+  }
+}
+
 @mixin text-gold {
   background: -webkit-linear-gradient(270deg, #FFF961 0%, #EC7D2C 100%);
   filter: drop-shadow(0 .4rem .4rem rgba(0, 0, 0, 0.25));

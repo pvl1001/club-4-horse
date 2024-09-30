@@ -43,15 +43,13 @@
   border: .2rem solid $color;
   margin-top: 2rem;
 
-  @media(hover: hover) and (pointer: fine) {
-    &:hover {
-      color: #fff;
-      background-color: $color;
-    }
+  @include hover {
+    color: #fff;
+    background-color: $color;
   }
 }
 
-@media(max-width: $media-m) {
+@include media {
   .img {
     height: 24.4rem;
     background: linear-gradient(rgba(0, 0, 0, 0.15) 0, rgba(0, 0, 0, 0.15) 100%) center/ cover no-repeat,

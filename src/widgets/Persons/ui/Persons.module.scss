@@ -27,7 +27,7 @@
   margin-top: 6rem;
 }
 
-@media(max-width: $media-m) {
+@include media {
   ._ {
     padding-top: 12rem;
   }

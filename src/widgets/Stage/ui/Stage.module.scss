@@ -10,7 +10,7 @@
   bottom: 0.9rem;
 }
 
-@media(max-width: $media-m) {
+@include media {
   ._ {
     padding-top: 12rem;
   }
