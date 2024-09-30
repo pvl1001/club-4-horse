@@ -1,5 +1,5 @@
 import {Button} from "shared/ui/Button";
-import logo from '../img/logo.webp';
+import {Logo} from "../ui/Logo.tsx";
 import s from "./Header.module.scss";
 
 
@@ -9,7 +9,7 @@ export function Header({}: Props) {
     return (
         <header className={s._}>
             <div className="wrapper">
-                <img src={logo} alt="logo" className={s.logo}/>
+                <Logo className={s.logo}/>
 
                 <div className={s.content}>
                     <div className={s.head_text}>
