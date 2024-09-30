@@ -7,7 +7,7 @@ type Props = {}
 
 export function Stage({}: Props) {
     return (
-        <div className={s._}>
+        <section className={s._}>
             <div className={s.title}>
                 <h2>Этапы преображения Васюков</h2>
                 <a href={'/'} className={cn(s.link, 'link')}>
@@ -16,6 +16,6 @@ export function Stage({}: Props) {
             </div>
 
             <StageList/>
-        </div>
+        </section>
     );
 }
