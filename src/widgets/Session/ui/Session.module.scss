@@ -58,7 +58,7 @@
   display: inline-block;
 }
 
-@media (max-width: $media-m) {
+@include media {
   .content {
     padding-block: 4.8rem 7.4rem;
   }
