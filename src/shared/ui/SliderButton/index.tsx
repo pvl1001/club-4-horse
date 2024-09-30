@@ -4,18 +4,17 @@ import ArrowIcon from 'shared/assets/svg/arrow.svg?react';
 import s from "./SliderButton.module.scss";
 
 
-type Props = ComponentProps<'button'> & {
-    next?: boolean
-    prev?: boolean
-}
+type Props = ComponentProps<'button'> & (
+    | {next: boolean, prev?: never}
+    | {next?: never, prev: boolean}
+    )
 
-export function SliderButton({className = s.default, next, prev, ...props}: Props) {
+export function SliderButton({className, next, prev, ...props}: Props) {
     return (
         <button
             type={'button'}
             className={cn(s._, className, {
-                'swiper-prev': prev,
-                'swiper-next': next,
+                [s.prev]: prev,
             })}
             {...props}
         >

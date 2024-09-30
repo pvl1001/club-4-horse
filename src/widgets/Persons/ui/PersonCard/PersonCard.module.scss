@@ -1,0 +1,61 @@
+._ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(21, 21, 21);
+  line-height: 1.2;
+}
+
+.img {
+  height: 32rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.15) 0, rgba(0, 0, 0, 0.15) 100%) center/ cover no-repeat,
+  url('../../img/paper.webp') center / 300% no-repeat,
+  url('../../img/person.webp') center calc(100% + 3.4rem)/91.2% no-repeat;
+  background-blend-mode: color-burn;
+  margin-bottom: 2.8rem;
+}
+
+.name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: .6rem;
+}
+
+.description {
+  font-size: 2rem;
+  opacity: .6;
+}
+
+.button {
+  $color: rgb(48, 87, 162);
+  padding: 0.6rem 1.1rem;
+  border-radius: 6.2rem;
+
+  color: $color;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.2;
+  border: .2rem solid $color;
+  margin-top: 2rem;
+
+  @media(hover: hover) {
+    &:hover {
+      color: #fff;
+      background-color: $color;
+    }
+  }
+}
+
+@media(max-width: $media-m) {
+  .img {
+    height: 24.4rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.15) 0, rgba(0, 0, 0, 0.15) 100%) center/ cover no-repeat,
+    url('../../img/paper.webp') center / 300% no-repeat,
+    url('../../img/person.webp') center calc(100% + 2.4rem)/91.2% no-repeat;
+  }
+}

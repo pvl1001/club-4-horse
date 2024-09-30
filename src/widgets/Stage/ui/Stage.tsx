@@ -7,7 +7,7 @@ type Props = {}
 
 export function Stage({}: Props) {
     return (
-        <div className={cn(s._, 'wrapper')}>
+        <div className={s._}>
             <div className={s.title}>
                 <h2>Этапы преображения Васюков</h2>
                 <a href={'/'} className={cn(s.link, 'link')}>

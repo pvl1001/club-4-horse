@@ -1,1 +1,43 @@
-._ {}
+._ {
+  padding-top: 20rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.title_row {
+    margin-bottom: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4rem;
+
+  span {
+    opacity: .6;
+  }
+}
+
+.slider__wrapper {
+  grid-column: span 2;
+  margin-top: 6rem;
+}
+
+@media(max-width: $media-m) {
+  ._ {
+    padding-top: 12rem;
+  }
+
+   .navigation {
+     order: 1;
+     margin-top: 4rem;
+   }
+
+  .slider__wrapper {
+    margin-top: 4rem;
+  }
+}
