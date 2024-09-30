@@ -43,7 +43,7 @@
   border: .2rem solid $color;
   margin-top: 2rem;
 
-  @media(hover: hover) {
+  @media(hover: hover) and (pointer: fine) {
     &:hover {
       color: #fff;
       background-color: $color;

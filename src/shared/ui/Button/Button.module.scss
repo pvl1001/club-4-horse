@@ -3,7 +3,7 @@
   --color: #fff;
   --outline-color: transparent;
 
-  @media(hover: hover) {
+  @media(hover: hover) and (pointer: fine) {
     &:hover {
       --bg: rgb(251, 206, 81);
       --color: var(--text-color-default);
@@ -16,7 +16,7 @@
   --color: var(--text-color-default);
   --outline-color: rgb(31, 31, 31);
 
-  @media(hover: hover) {
+  @media(hover: hover) and (pointer: fine) {
     &:hover {
       --bg: rgb(31, 31, 31);
       --color: #fff;
